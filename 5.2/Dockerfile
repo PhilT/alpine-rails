@@ -1,10 +1,13 @@
 FROM philthompson/alpine-ruby:2.5.0
+LABEL maintainer "Phil Thompson - https://github.com/philt"
 
 WORKDIR /app
 
 RUN apk --update --no-cache add \
     build-base \
     coreutils \
+    git \
+    imagemagick \
     libffi-dev \
     libressl-dev \
     libxml2-dev \
